@@ -60,7 +60,7 @@ INSERT INTO `admin` (`collagename`, `address`, `emailid`, `contactnumber`, `webs
 CREATE TABLE `attandance` (
   `subjectcode` varchar(30) DEFAULT NULL,
   `date` varchar(30) DEFAULT NULL,
-  `rollnumber` bigint(20) DEFAULT NULL,
+  `rollnumber` varchar(20) DEFAULT NULL,
   `present` tinyint(1) NOT NULL DEFAULT 0,
   `courcecode` varchar(20) DEFAULT NULL,
   `semoryear` int(11) DEFAULT NULL
@@ -137,7 +137,7 @@ CREATE TABLE `marks` (
   `semoryear` int(11) DEFAULT NULL,
   `subjectcode` varchar(20) DEFAULT NULL,
   `subjectname` varchar(40) DEFAULT NULL,
-  `rollnumber` bigint(20) DEFAULT NULL,
+  `rollnumber` varchar(20) DEFAULT NULL,
   `theorymarks` int(11) DEFAULT NULL,
   `practicalmarks` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
@@ -181,7 +181,7 @@ CREATE TABLE `result` (
 CREATE TABLE `rollgenerator` (
   `courcecode` varchar(20) DEFAULT NULL,
   `semoryear` int(11) DEFAULT NULL,
-  `rollnumber` bigint(20) DEFAULT NULL
+  `rollnumber` varchar(20) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
@@ -193,7 +193,7 @@ CREATE TABLE `rollgenerator` (
 CREATE TABLE `students` (
   `Courcecode` varchar(20) DEFAULT NULL,
   `semoryear` int(11) DEFAULT NULL,
-  `rollnumber` bigint(20) DEFAULT NULL,
+  `rollnumber` varchar(20) DEFAULT NULL,
   `optionalsubject` varchar(30) DEFAULT NULL,
   `firstname` varchar(20) DEFAULT NULL,
   `lastname` varchar(20) DEFAULT NULL,
